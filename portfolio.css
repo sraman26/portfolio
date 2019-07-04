@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+.button1 {
+  background-color: #09F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:Sofia;
+}
+.button2 {
+  background-color: #093;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:Sofia;
+}
+.button3 {
+  background-color: #F60;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:Sofia;
+}
+.buttonbox {
+	padding-top:100px;
+	padding-left:550px;
+}
+.h1
+{
+ background-color: #FFF;
+  border: none;
+  color: black;
+  padding: 15px 500px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  font-family:Sofia;
+
+}
