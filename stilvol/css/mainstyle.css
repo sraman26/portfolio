@@ -1,0 +1,746 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	height:auto;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+@font-face {
+    font-family: mysofiafont;
+    src:url(../Sofia-Regular.otf);
+}
+
+@font-face {
+    font-family: mysofiafont;
+    src:url(../Sofia-Regular.otf);
+}
+
+@font-face {
+    font-family: mysofiafont;
+    src:url(../Sofia-Regular.otf);
+}
+
+/* Mobile Layout: 480px and below. */
+@media only screen and  (max-width: 480px) {
+
+.gridContainer {
+	width: 100%;
+	max-width: 1600px;
+
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height:80px;	
+	border-bottom:2px solid #F93;
+}
+
+.iconsbox {
+	width:110px;
+	height:80px;
+	float:right;
+	
+}
+.topicons{
+	width:32px;
+	height:32px;
+	display:inline-block;
+	margin-top:24px;
+	margin-right:2px;
+	border-radius:100%;
+}
+
+.sitelogo {
+	line-height:80px;
+	font-family:mysofiafont;
+	text-align:center;
+	font-size:3em;
+	color:#C60;
+	float:left;
+	margin-left:15px;
+}
+
+#menu{
+	clear: both;
+	float:left;
+	display: block;
+	width:100%;
+		background-color: #f1f1f1;
+		height:0.12%;
+		border-bottom: 2px solid #F93;
+		list-style:none;
+		text-decoration:none;
+	}
+	#menu .menuItems ul{
+		list-style:none;
+		text-decoration:none;
+		height:0.12%;
+		width:73%;
+		padding-right:50%;
+	
+	}
+	#menu .menuItems ul li{
+		float:left;
+		list-style:none;
+		text-decoration:none;
+		margin-right:3%;
+		
+
+	}
+	#menu .menuItems ul li:first-child
+	{
+		
+	}
+
+	.menulink:hover, dropdown:hover .dropbtn
+{
+	color:#F39;
+	
+}
+.dropdown .dropbtn {
+  font-size: 0.8em !important; 
+  outline: none;
+  background-color: inherit;
+  text-decoration:none;
+		font-family:mysofiafont;
+		color:#C60;
+	
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: #F39;
+  font-family:mysofiafont;
+  font-size:0.8em;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	
+#mainbanner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	//height:450px;
+	position:relative;
+}
+
+.bannerheading 
+{
+	font-family: mysofiafont;
+	font-size:2em;
+	color:#F30;
+	padding:10px;
+	background-color:rgba(0,0,0,.8);
+	position:absolute;
+	text-align:center;
+	width:100%
+	
+}
+
+.productheading {
+	font-family: mysofiafont;
+	font-size:0.8em;
+	color:#F30;
+	background-color:rgba(0,0,0,.8);
+	position:absolute;
+	text-align:center;
+	width: 100%;
+	bottom:0px;
+}
+.menbox {
+	clear: both;
+
+	display: block;
+	position:relative;
+	width: 100%;
+	box-shadow: 0.5px 0px 30px -2px rgba(0,0,0,0.22);
+}
+
+#footerbox {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height:350px;
+	position:relative;
+	height:50%;
+}
+
+.offerinfo {
+	position:absolute;
+	left:10%;
+	top:5%;
+	font-family: mysofiafont;
+}
+	
+
+.bannerinfo {
+	position:absolute;
+	left:10%;
+	top:30%;
+	font-family: mysofiafont;
+}
+
+.subtext {
+	font-family: mysofiafont;
+	font-size:2.5em;
+	color:#000;
+	font-weight:500;
+	
+}
+
+.shopbtn {
+	width:180px;
+	height:50px;
+	line-height:50px;
+	display:block;
+	background-color:#FFF;
+	text-decoration:none;
+	font-family: mysofiafont;
+	font-size:2em;
+	text-align:center;
+
+}
+
+.productinfo {
+	position:absolute;
+	width:49.1525%;
+	top: 0px;
+	font-family: mysofiafont;
+	border: 1px solid #0F6;
+}
+
+.producttext {
+	font-family: mysofiafont;
+	font-size:2.5em;
+	color:#000;
+	font-weight:500;
+	bottom:0px;
+	
+}
+
+.videoinfo {
+	position:absolute;
+	top:100px;
+	left:20%
+}
+
+#footcol1 {
+	clear: both;
+	width: 100%;
+	display: block;
+	padding-left:25%;
+	padding-top:5% !important;
+
+	
+}
+
+#footcol2 {
+	clear: both;
+	display: block;
+	width: 100%;
+	height:32px;
+	padding-top:2%;
+}
+
+#footcol3 {
+	clear: both;
+	margin-right:10% !important;
+	display:block;
+	width: 100%;
+	height:32px;
+	bottom:12%;
+}
+
+#footcol4 {
+	clear: both;
+	margin: 0px auto;
+	width: 90%;
+	display: block;
+}
+.slide
+{
+	clear: both;
+	float: left;
+	display: block;
+    width:100%;
+	position:relative;
+
+}
+.slidetext
+{
+	font-family: mysofiafont;
+	font-size:0.8em;
+	color:#F30;
+	background-color:rgba(0,0,0,.8);
+	position:absolute;
+	text-align:left;
+	width: 8%;
+	bottom:5px;
+
+	
+}
+.footmenu .footmenulist {
+	list-style:none;
+	float:left;
+	margin-right:1.6%;
+	padding: 0px !important;
+	height:32px;
+
+}
+.footmenulist2
+{
+	list-style:none;
+	float:left;
+	margin-left:5%;
+	padding: 0px !important;
+	height:32px;
+
+	
+}
+
+a.footmenulink2 {
+	
+	text-decoration:none;
+	width:100%;
+	float:left;
+	font-family: mysofiafont;
+	font-size:1em;
+	margin-right:5% !important;
+	color: #d67e00;
+}
+
+a.footmenulink {
+	
+	text-decoration:none;
+	width:100%;
+	float:left;
+	font-family: mysofiafont;
+	font-size:1em;
+	margin-right:4% !important;
+	color: #d67e00;
+}
+.socialbox {
+	width:55%;
+	
+}
+
+.socialicon {
+	
+	width:32px;
+	height:32px;
+	display:inline-block;
+	margin-right: 5% !important;
+		
+}
+.copyrighttext
+{
+	
+	text-align:center;
+	color:#666;
+	font-family: mysofiafont;
+}
+
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 100%;
+	max-width: 1600px;
+
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height:80px;	
+	border-bottom:2px solid #F93;;
+}
+
+.iconsbox {
+	width:110px;
+	height:80px;
+	float:right;
+	
+}
+.topicons{
+	width:32px;
+	height:32px;
+	display:inline-block;
+	margin-top:24px;
+	margin-right:2px;
+	border-radius:100%;
+}
+
+.sitelogo {
+	line-height:80px;
+	font-family:mysofiafont;
+	text-align:center;
+	font-size:3em;
+	color:#C60;
+	float:left;
+	margin-left:15px;
+}
+
+#menu{
+	clear: both;
+	float:left;
+	display: block;
+		width:100%;
+		background-color: #f1f1f1;
+		height:40px;
+		border-bottom: 2px solid #F93;;
+	}
+	.menuItems{
+	
+		width:100%;
+		height:40px;
+		text-decoration:none;
+	}
+	#menu .menuItems ul{
+		list-style:none;
+		height:0.12%;
+		width:90%;
+		padding-left:8%;
+	}
+	#menu .menuItems ul li{
+		float:left;
+		margin-right:7% !important;
+
+	}
+	#menu .menuItems ul li:first-child
+	{
+		
+	}
+
+	.menulink:hover, dropdown:hover .dropbtn
+{
+	color:#F39;
+	
+}
+.dropdown .dropbtn {
+  font-size: 20px !important; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin: 0;
+  text-decoration:none;
+		font-family:mysofiafont;
+		color:#C60;
+		font-size:20px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: #F39;
+  font-family:mysofiafont;
+  font-size:1em;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	
+#mainbanner {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	//height:450px;
+	position:relative;
+}
+
+.bannerheading 
+{
+	font-family: mysofiafont;
+	font-size:2em;
+	color:#F30;
+	padding:10px;
+	background-color:rgba(0,0,0,.8);
+	position:absolute;
+	text-align:center;
+	width:100%
+	
+}
+
+.productheading {
+	font-family: mysofiafont;
+	font-size:3em;
+	color:#F30;
+	background-color:rgba(0,0,0,.8);
+	position:absolute;
+	text-align:center;
+	width: 100%;
+	bottom:0px;
+}
+.menbox {
+	clear: both;
+	display: block;
+	position:relative;
+	width: 100%;
+	box-shadow: 0.5px 0px 30px -2px rgba(0,0,0,0.22);
+}
+
+#footerbox {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height:350px;
+	position:relative;
+	height:50%;
+}
+
+.offerinfo {
+	position:absolute;
+	left:10%;
+	top:5%;
+	font-family: mysofiafont;
+}
+	
+
+.bannerinfo {
+	position:absolute;
+	left:10%;
+	top:30%;
+	font-family: mysofiafont;
+}
+
+.subtext {
+	font-family: mysofiafont;
+	font-size:2.5em;
+	color:#000;
+	font-weight:500;
+	
+}
+
+.shopbtn {
+	width:180px;
+	height:50px;
+	line-height:50px;
+	display:block;
+	background-color:#FFF;
+	text-decoration:none;
+	font-family: mysofiafont;
+	font-size:2em;
+	text-align:center;
+
+}
+
+.productinfo {
+	position:absolute;
+	width:49.1525%;
+	top: 0px;
+	font-family: mysofiafont;
+	border: 1px solid #0F6;
+}
+
+.producttext {
+	font-family: mysofiafont;
+	font-size:2.5em;
+	color:#000;
+	font-weight:500;
+	bottom:0px;
+	
+}
+
+.videoinfo {
+	position:absolute;
+	top:100px;
+	left:20%
+}
+
+#footcol1 {
+	clear: both;
+	width: 100%;
+	display: block;
+	padding-left:37%;
+	padding-top:2%;
+
+	
+}
+
+#footcol2 {
+	clear: both;
+	display: block;
+	width: 100%;
+	height:32px;
+	padding-left:20%;
+	padding-top:2%
+}
+
+#footcol3 {
+	clear: both;
+	margin-right:10% !important;
+	display:block;
+	width: 100%;
+	height:32px;
+	padding-left:10%;
+}
+
+#footcol4 {
+	clear: both;
+	margin: 0px auto;
+	width: 90%;
+	display: block;
+}
+.slide
+{
+	clear: both;
+	float: left;
+	display: block;
+    width:100%;
+	position:relative;
+
+}
+.slidetext
+{
+	font-family: mysofiafont;
+	font-size:2em;
+	color:#F30;
+	background-color:rgba(0,0,0,.8);
+	position:absolute;
+	text-align:left;
+	width: 6.66%;
+	bottom:5px;
+
+	
+}
+.footmenu .footmenulist {
+	list-style:none;
+	float:left;
+	margin-right:4%;
+	padding: 0px !important;
+	height:32px;
+
+}
+.footmenulist2
+{
+	list-style:none;
+	float:left;
+	margin-left:10%;
+	padding: 0px !important;
+	height:32px;
+
+	
+}
+
+a.footmenulink2 {
+	
+	text-decoration:none;
+	width:100%;
+	float:left;
+	font-family: mysofiafont;
+	font-size:1em;
+	margin-right:5% !important;
+	color: #d67e00;
+	text-align:center !important;
+}
+
+a.footmenulink {
+	
+	text-decoration:none;
+	width:100%;
+	float:left;
+	font-family: mysofiafont;
+	font-size:1em;
+	margin-right:5% !important;
+	color: #d67e00;
+	text-align:center !important;
+}
+.socialbox {
+	width:55%;
+	
+}
+
+.socialicon {
+	
+	width:32px;
+	height:32px;
+	display:inline-block;
+	margin-right: 7% !important;
+		
+}
+.copyrighttext
+{
+	
+	text-align:center;
+	color:#666;
+	font-family: mysofiafont;
+	padding-left:1%;
+}
+
+
+}
+

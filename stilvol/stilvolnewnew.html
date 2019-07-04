@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="jq/jquery-1.11.1.min.js"></script>
+<script src="boos/bootstrap.min.js"></script>  
+
+<link rel="stylesheet" href="boos/bootstrap.min.css">
+<link rel="stylesheet" href="css/stylestyle.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script type="text/javascript" src="jq/jquery.easeScroll.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<style>
+.slide
+{
+	clear:both;
+	display:block;
+	width:100%;
+	height:20%;
+
+}
+
+</style>
+<!--CSS 
+Add slick.css in your <head>
+-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+ 
+<!--JS
+Add slick.js before your closing <body> tag, after jQuery (requires jQuery 1.7 +)
+-->
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+  <script>
+$(function() {   
+ $('.slide').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000,
+	  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
+  });
+});
+</script>
+<head>
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#sitelogo"><img src="images/logo.png" /><style="height:10px"/></a>
+            <a href="#banner" class="active" class="btn">What's New</a>
+            <a href="#about" class="btn">Men</a>
+            <a href="#servic" class="btn">Women</a>
+            <a href="#contact" class="btn">Juniors</a>
+             <a href="#contact" class="btn">Kids</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+          
+    </nav>
+</header>
+
+
+ <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+         
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+ 
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:90px;left:0px;width:980px;height:490px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="images/mainbanner1.jpg" />
+                <div class ="bannerheading" style="bottom: 0;">Make Heads Turn at Your Office Now</div>
+
+            </div>
+            <div>
+                <img data-u="image" src="images/offerimage.jpg" alt="offer image" />
+                <div class ="bannerheading" style="bottom: 0;" >20% Off On All Womens Collections</div>
+
+            </div>
+            <div>
+                <img data-u="image" src="images/mensnew.jpg" alt="men garments" />
+                <div class ="bannerheading" style="bottom: 0;">All Men All Seasons</div>
+            </div>
+
+            <div>
+                <img data-u="image" src="images/womensnew.jpg" alt="women garments" />
+                <div class ="bannerheading" style="bottom: 0;">Find The Perfect Dress</div>
+
+            </div>
+            <div>
+                <img data-u="image" src="images/juniorsnew.jpg" alt="junior garments" />
+                <div class ="bannerheading" style="bottom: 0;">Go Out In Style</div>
+            </div>
+            <div>
+                <img data-u="image" src="images/kidsnew.jpg" alt="kids garments" />
+                <div class ="bannerheading" style="bottom: 0;">Trendy and Fun</div>
+
+            </div>
+        </div>
+        
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+
+
+
+    <div class="container">
+  
+  <div class="seasonbox">
+  <img src="season.jpeg" alt="men garments"/>
+  <div class="productheading"> Gifts For The Whole Family </div>
+  </div>
+  
+   <div class="handbox">
+  <img src="handbag2.jpg" alt="men garments"/>
+  <div class="productheading"> Check Out Our Handbag Lineup </div>
+  </div>
+
+  <div class="jeansbox">
+  <img src="jeans1.jpg" alt="men garments"/>
+  <div class="productheading">Jeans for Every Size </div>
+  </div>
+
+<div class="slide">
+  <div><img src="banner2.jpg"/>
+  <div class="slidetext">Men's Shirt</div>
+  </div>
+  <div><img src="banner3.jpg"/>
+    <div class="slidetext">Boys Tshirt</div>
+  </div>
+  <div><img src="banner5.jpg"/>
+    <div class="slidetext">Women's Dress</div>
+  </div>
+  <div><img src="banner6.jpg"/>
+    <div class="slidetext">Kids Tshirt</div>
+  </div>
+  
+   <div><img src="banner7.jpg"/>
+     <div class="slidetext">Girls Tshirt</div>
+   </div>
+    <div><img src="banner8.jpg"/>
+      <div class="slidetext">Kids Sweater</div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="container">
+     <form>
+            <input type="text" placeholder="Search" id="eml"><br>
+            <a href="#"><button id="subscribe-btn">Search</button></a>
+      </form>
+    
+    
+        </ul>
+     <a href="#sitelogo"><img src="images/logo.png"/></a>
+      
+     <p>All Rights Reserved &copy; Stilvol 2018</p>
+     <ul>
+            <li class="ani"><a href="#"><span class="fab fa-instagram"></span></a></li>
+            <li class="ani"><a href="#"><span class="fab fa-youtube"></span></a></li>
+            <li class="ani"><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li class="ani"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+    </div>
+</footer>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<script>
+  	var header = document.getElementById("myTopnav");
+	var btns = header.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	  });
+	}
+</script>
+<script>
+  $(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+</script>
+<!--for scrolling thent changes navbar menus-->
+<script>
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.topnav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.topnav a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+    $(window).scroll(function() {
+		if ($(this).scrollTop() > 1){  
+			$('header').addClass("sticky");
+		  }
+		  else{
+			$('header').removeClass("sticky");
+		  }
+		});
+    
+   
+</script>
+<script>
+    $("#subscribe-btn").click(function(){
+         var ab=$("#eml").val();
+    if(ab=="")
+        {
+             $("#eml").addClass('animated shake');
+            $("#eml").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationEnd animationend', function(){
+                $("#eml").removeClass('animated shake');
+            });
+        }
+    });
+    $("#submit-btn").click(function(){
+         var a=$("#name").val();
+         var b=$("#datepicker").val();
+         var c=$("#phone").val();
+         var d=$("#timepicker").val();
+    if(a=="")
+        {
+             $("#name").addClass('animated shake');
+            $("#name").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationEnd animationend', function(){
+                $("#name").removeClass('animated shake');
+            });
+        }
+         if(b=="")
+        {
+             $("#datepicker").addClass('animated shake');
+            $("#datepicker").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationEnd animationend', function(){
+                $("#datepicker").removeClass('animated shake');
+            });
+        }
+         if(c=="")
+        {
+             $("#phone").addClass('animated shake');
+            $("#phone").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationEnd animationend', function(){
+                $("#phone").removeClass('animated shake');
+            });
+        }
+          if(d=="")
+        {
+             $("#timepicker").addClass('animated shake');
+            $("#timepicker").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationEnd animationend', function(){
+                $("#timepicker").removeClass('animated shake');
+            });
+        }
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+    $("html").easeScroll(5000);
+
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+
+$('#timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 30,
+    minTime: '9',
+    maxTime: '9:00pm',
+    defaultTime: '12',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+    </script>
+
+</body>
+</html>
+
+
+    
+
+
+    
+
+
+</body>
+</html>
