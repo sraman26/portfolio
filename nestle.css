@@ -1,37 +1,46 @@
 @charset "utf-8";
 /* CSS Document */
 div.gallery {
-  border: 1px solid #ccc;
+  border: 6px solid #09F;
+  border-radius:25px;
+
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 6px solid #09F;
 }
+
 
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius:20px;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+  font-family:Sofia;
+  border-radius:15px;
 }
+
 
 * {
   box-sizing: border-box;
+  background-color:#B9EFF7;
+
 }
 
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 24.99999%;
+ width:25%;
+ height:25%;
+  padding-bottom:30px;
 }
 
 .h1
 {
- background-color: #FFF;
-  border: none;
   color: black;
   padding: 15px 40%;
   text-align: center;
@@ -56,7 +65,7 @@ div.desc {
   }
   .h1
 {
- background-color: #9FF;
+ background-color: #C8E7F0;
   border: none;
   color: black;
   padding: 15px 32%;
